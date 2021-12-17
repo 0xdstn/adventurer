@@ -1,0 +1,52 @@
+SA:Island
+S2:Ancient ruin
+S3:Town or Village
+S4:Wood or Forrest
+S5:Castle
+S6:Safe House
+S7:Place of worship
+S8:Battlefield
+S9:Barren landscape
+S1:Gardens
+SJ:Coastline
+SQ:City
+SK:Palace",      
+CA:A new species
+C2:A new / old foe
+C3:A wandering spirit
+C4:A lone traveller
+C5:A tyrant king
+C6:A scholar
+C7:An ancient evil
+C8:An unknown presence
+C9:A beast
+C1:The plants
+CJ:A playful creature
+CQ:A new/ old love
+CK:A bandit leader
+HA:A sign
+H2:Natural disaster
+H3:Lost on way
+H4:Met an interesting stranger
+H5:Extreme weather
+H6:Cross dangerous terrain
+H7:Attacked at camp
+H8:Taken in by strangers
+H9:Saw Death
+H1:Wild animals
+HJ:A vision
+HQ:An illness
+HK:Path blocked
+DA:The remains of a past visitor
+D2:Ancient artefact
+D3:Unknown object
+D4:A book
+D5:A curse or spell
+D6:A lost treasure
+D7:A trinket
+D8:A mechanical contraption
+D9:A map
+D1:A small box
+DJ:A weapon
+DQ:A toy
+DK:A new food

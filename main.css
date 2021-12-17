@@ -1,0 +1,152 @@
+body,html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body {
+    font-family: "Fira Code", monospace;
+}
+
+.red {
+    color: red;
+}
+
+#suits {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+}
+
+.suit {
+    cursor: pointer;
+    font-weight: 700;
+    margin: 0 1em;
+    text-align: center;
+}
+
+.suit .icon {
+    display: block;
+    font-size: 4em;
+}
+
+#output {
+    font-size: 1.25em;
+    height: 25%;
+    padding: 0 1em;
+    text-align: center;
+}
+
+.out-suit {
+    font-size: 1.25em;
+    padding-right: 2px;
+}
+
+#return {
+    color: #00aaee;
+    cursor: pointer;
+    display: none;
+    margin-top: .5em;
+}
+
+#return.show {
+    display: block;
+}
+
+#controls {
+    height: 25%;
+    text-align: center;
+}
+
+#controls span {
+    color: #00aaee;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+#custom_wrapper {
+    align-items: center;
+    background: rgba(0,0,0,.8);
+    display: none;
+    justify-content: center;
+    position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+}
+
+#custom_wrapper.open {
+    display: flex;
+}
+
+#custom {
+    background: #fff;
+    border-radius: 4px;
+    padding: 2em 1em 1em;
+    position: relative;
+}
+
+#custom #close {
+    display: block;
+    cursor: pointer;
+    font-size: 2em;
+    height: 20px;
+    line-height: 20px;
+    position: absolute;
+        top: 3px;
+        right: 3px;
+    text-align: center;
+    width: 20px;
+}
+
+#custom textarea {
+    display: block;
+    border: solid 1px #ccc;
+    border-radius: 3px;
+    height: 100px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+#custom p {
+    font-size: .8em;
+}
+
+#custom input {
+    background: #00aaee;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 700;
+    margin: .5em 0 0;
+    padding: .5em;
+}
+
+#custom button {
+    background: #ccc;
+    border: none;
+    border-radius: 3px;
+    color: #333;
+    cursor: pointer;
+    font-weight: 700;
+    margin: .5em 0 0;
+    padding: .5em;
+}
+
+@media(max-width: 400px) {
+    body {
+        font-size: 11px;
+    }
+
+    #output {
+        font-size: 1.5em;
+    }
+
+    #controls {
+        font-size: 1.25em;
+    }
+}

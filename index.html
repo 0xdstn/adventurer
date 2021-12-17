@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="main.css" />
+    </head>
+    <body>
+        <div id="suits">
+            <div class="suit" id="spades">
+                <span class="icon">&spades;</span>
+                Locations<br>
+                (<span id="s_count">0</span>/13)
+            </div>
+            <div class="suit" id="hearts">
+                <span class="icon red">&hearts;</span>
+                Events<br>
+                (<span id="h_count">0</span>/13)
+            </div>
+            <div class="suit" id="diamonds">
+                <span class="icon red">&diams;</span>
+                Things<br>
+                (<span id="d_count">0</span>/13)
+            </div>
+            <div class="suit" id="clubs">
+                <span class="icon">&clubs;</span>
+                Beings<br>
+                (<span id="c_count">0</span>/13)
+            </div>
+        </div>
+        <div id="output">
+            <span id="output_text">Click a suit above to draw a card from that pile</span>
+            <span id="return">[return to deck]</span>
+        </div>
+        <div id="controls">
+            <span id="reset">[reset]</span> <span id="list">[list]</span>
+        </div>
+
+        <div id="custom_wrapper">
+            <div id="custom">
+                <span id="close">&times;</span>
+                <textarea id="list_input"></textarea>
+                <input type="button" id="save" value="Update list" />
+                <button id="reset_list">Default</button>
+                <p>
+                    <strong>Provide your custom list in the following format:</strong><br>
+                    SA:Island<br>
+                    S2:Ancient ruin<br>
+                    S3:Town or Village<br>
+                    S4:Wood or Forrest<br>
+                    S5:Castle<br>
+                    S6:Safe House<br>
+                    S7:Place of worship<br>
+                    S8:Battlefield<br>
+                    S9:Barren landscape<br>
+                    S1:Gardens<br>
+                    SJ:Coastline<br>
+                    SQ:City<br>
+                    SK:Palace<br>
+                    CA:A new species<br>
+                    C2:A new / old foe<br>
+                    C3:A wandering spirit<br>
+                    C4:A lone traveller<br>
+                    ...
+                </p>
+            </div>
+        </div>
+
+        <script src="main.js"></script>
+    </body>
+</html>
