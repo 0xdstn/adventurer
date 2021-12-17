@@ -140,17 +140,3 @@ a {
     margin: .5em 0 0;
     padding: .5em;
 }
-
-@media(max-width: 400px) {
-    body {
-        font-size: 11px;
-    }
-
-    #output {
-        font-size: 1.5em;
-    }
-
-    #controls {
-        font-size: 1.25em;
-    }
-}
