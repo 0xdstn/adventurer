@@ -10,7 +10,7 @@ S9:Barren landscape
 S1:Gardens
 SJ:Coastline
 SQ:City
-SK:Palace",      
+SK:Palace
 CA:A new species
 C2:A new / old foe
 C3:A wandering spirit
