@@ -10,11 +10,67 @@ var closeBtn = document.getElementById('close');
 var customWrapper = document.getElementById('custom_wrapper');
 var saveBtn = document.getElementById('save');
 var resetListBtn = document.getElementById('reset_list');
+var adventListBtn = document.getElementById('advent_list');
 var sPile = document.getElementById("spades");
 var cPile = document.getElementById("clubs");
 var hPile = document.getElementById("hearts");
 var dPile = document.getElementById("diamonds");
 var listInput = document.getElementById('list_input');
+
+const adventList = {
+    "SA": "Candy Cane Forest",
+    "S2": "Merry Market",
+    "S3": "Mince Pie Mountain",
+    "S4": "Eggnog Nook",
+    "S5": "Santa's Workshop",
+    "S6": "Stables",
+    "S7": "Nort Pole",
+    "S8": "Fezziwig's",
+    "S9": "Hot Chocolate River",
+    "S1": "Festive Fjord",
+    "SJ": "Tinsel Town",
+    "SQ": "Cracker Joke Factory",
+    "SK": "Mulled Wine Millpond",
+    "CA": "A Snow Person",
+    "C2": "Holly Jolly",
+    "C3": "A Reindeer",
+    "C4": "Santa",
+    "C5": "An Elf",
+    "C6": "Good King Wenceslas",
+    "C7": "Scrooge",
+    "C8": "A Ghost",
+    "C9": "A Gingerbread Person",
+    "C1": "Michael Baubley",
+    "CJ": "A Robin",
+    "CQ": "An Angel",
+    "CK": "A Polar Bear",
+    "HA": "Ice Skating",
+    "H2": "A Snowball Fight",
+    "H3": "A Party",
+    "H4": "A Decorating Competition",
+    "H5": "A Sleigh Race",
+    "H6": "A Feast",
+    "H7": "A Yule Tide",
+    "H8": "A Snow Storm",
+    "H9": "A Train Ride",
+    "H1": "A Sing Along",
+    "HJ": "Parlour Games",
+    "HQ": "A Magical Show",
+    "HK": "A Birth",
+    "DA": "A Star",
+    "D2": "Christmas Trees",
+    "D3": "A Pear Tree",
+    "D4": "Ice Sculptures",
+    "D5": "Baubles",
+    "D6": "Lights",
+    "D7": "A Sled",
+    "D8": "A Sleigh Bell",
+    "D9": "A Present",
+    "D1": "5 Gold Rings",
+    "DJ": "A Magic Snow Globe",
+    "DQ": "A Cake",
+    "DK": "Mistletoe"
+};
 
 const defaultList = {
     "SA": "Island",
@@ -228,6 +284,12 @@ saveBtn.addEventListener('click',function(){
 
 resetListBtn.addEventListener('click',function(){
     list = {...defaultList};
+    updateLocalList();
+    customWrapper.classList.remove('open');
+});
+
+adventListBtn.addEventListener('click',function(){
+    list = {...adventList};
     updateLocalList();
     customWrapper.classList.remove('open');
 });
